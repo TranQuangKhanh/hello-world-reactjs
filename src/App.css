@@ -22,6 +22,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  animation: bgShift 10s ease infinite;
 }
 
 .App-link {
@@ -34,5 +35,17 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@keyframes bgShift {
+  0% {
+    background: linear-gradient(135deg, #ff6a00, #f3ff18ff);
+  }
+  50% {
+    background: linear-gradient(155deg, #1da2d6, rgb(251, 82, 4));
+  }
+
+  100% {
+    background: linear-gradient(155deg, #d61d30, rgb(4, 251, 90));
   }
 }
